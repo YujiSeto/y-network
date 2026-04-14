@@ -8,6 +8,7 @@ export const NavLogout = () => {
   const router = useRouter();
 
   const handleLogout = () => {
+    console.log("Logout triggered");
     router.push("/signin");
   };
 
@@ -16,8 +17,8 @@ export const NavLogout = () => {
       onClick={handleLogout}
       className={`cursor-pointer flex items-center gap-6 py-3 opacity-50 hover:opacity-100 transition-opacity`}
     >
-      <FontAwesomeIcon icon={faArrowRightFromBracket} className="size-6" />
-      <div className="text-lg">Logout</div>
+      <FontAwesomeIcon icon={faArrowRightFromBracket} className="size-6 pointer-events-none" />
+      <div className="text-lg pointer-events-none">Logout</div>
     </div>
   );
 };
