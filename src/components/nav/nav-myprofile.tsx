@@ -1,4 +1,5 @@
 import { user } from "@/data/user";
+import Image from "next/image";
 import Link from "next/link";
 
 export const NavMyProfile = () => {
@@ -6,7 +7,13 @@ export const NavMyProfile = () => {
     <div className="flex items-center">
       <div className="size-10 mr-2 rounded-full overflow-hidden">
         <Link href={`/${user.slug}`}>
-          <img src={user.avatar} alt={user.name} className="size-full" />
+          <Image
+            src={user.avatar}
+            alt={user.name}
+            width={40}
+            height={40}
+            className="size-full object-cover"
+          />
         </Link>
       </div>
       <div className="flex-1 overflow-hidden">

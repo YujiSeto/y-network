@@ -8,7 +8,14 @@ type Props = {
 export const Logo = ({ size }: Props) => {
   return (
     <Link href="/">
-      <Image src="/logo.png" alt="Y" width={size} height={size} quality={100} />
+      <Image
+        src="/logo.png"
+        alt="Y"
+        width={size}
+        height={size}
+        quality={100}
+        priority
+      />
     </Link>
   );
 };
