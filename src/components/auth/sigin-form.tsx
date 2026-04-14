@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 export const SigninForm = () => {
   const router = useRouter();
@@ -26,9 +27,7 @@ export const SigninForm = () => {
         onChange={(t) => setPasswordField(t)}
         password
       />
-      <button type="submit" onClick={handleSignin}>
-        Sign In
-      </button>
+      <Button label="Sign In" onClick={handleSignin} size="lg" />
     </>
   );
 };
