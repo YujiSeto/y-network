@@ -1,0 +1,68 @@
+"use client";
+
+import { User } from "@/types/user";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./button";
+import { useState } from "react";
+
+type Props = {
+  user: User;
+};
+
+export const RecommendationItem = ({ user }: Props) => {
+  const [following, setFollowing] = useState(false);
+
+  const handleFollowButton = () => {
+    setFollowing(true);
+  };
+
+  const handleUnFollowButton = () => {
+    setFollowing(false);
+  };
+
+  return (
+    <div className="flex items-center">
+      <div className="size-10 mr-2 rounded-full overflow-hidden">
+        <Link href={`/profile/${user.slug}`}>
+          <Image
+            src={user.avatar}
+            alt={user.name}
+            width={40}
+            height={40}
+            className="size-full object-cover"
+            loading="eager"
+          />
+        </Link>
+      </div>
+      <div className="flex-1 overflow-hidden">
+        <Link href={`/${user.slug}`} className="block truncate">
+          {user.name}
+        </Link>
+        <div className="truncate text-sm text-gray-400">@{user.slug}</div>
+      </div>
+      <div className="pl-2 w-20">
+        {!following ? (
+          <Button label="Follow" onClick={handleFollowButton} size="sm" />
+        ) : (
+          <Button label="Unfollow" onClick={handleUnFollowButton} size="sm" />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export const RecommendationItemSkeleton = () => {
+  return (
+    <div className="animate-pulse flex items-center">
+      <div className="size-10 mr-2 rounded-full bg-gray-600"></div>
+      <div className=" flex-1 flex flex-col gap-1">
+        <div className="h-4 w-3/4 bg-gray-600 rounded"></div>
+        <div className="h-3 w-1/4 bg-gray-600 rounded"></div>
+      </div>
+      <div className="pl-2 w-20">
+        <div className="h-7 bg-gray-600 rounded-full"></div>
+      </div>
+    </div>
+  );
+};

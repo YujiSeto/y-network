@@ -13,6 +13,7 @@ export const NavMyProfile = () => {
             width={40}
             height={40}
             className="size-full object-cover"
+            loading="eager"
           />
         </Link>
       </div>
