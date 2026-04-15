@@ -12,6 +12,7 @@ type Props = {
   icon?: IconDefinition;
   password?: boolean;
   onChange?: (newValue: string) => void;
+  onEnter?: () => void;
 };
 
 export const Input = ({
@@ -21,8 +22,15 @@ export const Input = ({
   icon,
   filled,
   onChange,
+  onEnter,
 }: Props) => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const handleKeyUp = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter" && onEnter) {
+      onEnter();
+    }
+  };
 
   return (
     <div
@@ -38,7 +46,8 @@ export const Input = ({
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange && onChange(e.target.value)}
-        type={password && showPassword ? "text" : "password"}
+        onKeyUp={handleKeyUp}
+        type={password && !showPassword ? "password" : "text"}
       />
       {password && (
         <FontAwesomeIcon
