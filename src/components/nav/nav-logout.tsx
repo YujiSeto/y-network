@@ -17,7 +17,10 @@ export const NavLogout = () => {
       onClick={handleLogout}
       className={`cursor-pointer flex items-center gap-6 py-3 opacity-50 hover:opacity-100 transition-opacity`}
     >
-      <FontAwesomeIcon icon={faArrowRightFromBracket} className="size-6 pointer-events-none" />
+      <FontAwesomeIcon
+        icon={faArrowRightFromBracket}
+        className="size-6! pointer-events-none"
+      />
       <div className="text-lg pointer-events-none">Logout</div>
     </div>
   );
