@@ -1,12 +1,13 @@
 import { Tweet } from "@/types/tweet";
 import { user } from "./user";
 
-export const tweet: Tweet[] = [
+export const tweets: Tweet[] = [
   {
     id: 9,
     user: user,
     body: "Just finished setting up the new Y Network feed! 🚀 What do you guys think of the layout?",
-    image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=2070&auto=format&fit=crop",
     likesCount: 523,
     commentsCount: 61,
     retweetsCount: 12,
@@ -18,7 +19,8 @@ export const tweet: Tweet[] = [
     id: 8,
     user: user,
     body: "Next.js 15+ and Tailwind v4 is such a powerful combination. Building fast and beautiful apps has never been easier.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
     likesCount: 150,
     commentsCount: 20,
     retweetsCount: 5,
@@ -30,7 +32,8 @@ export const tweet: Tweet[] = [
     id: 7,
     user: user,
     body: "Coffee and code kind of day. ☕️💻 Crushing these features one by one!",
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop",
     likesCount: 89,
     commentsCount: 12,
     retweetsCount: 2,
@@ -53,7 +56,8 @@ export const tweet: Tweet[] = [
     id: 5,
     user: user,
     body: "A clean workspace leads to a clean mind. 🧘‍♂️✨",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
     likesCount: 210,
     commentsCount: 15,
     retweetsCount: 8,
@@ -65,7 +69,8 @@ export const tweet: Tweet[] = [
     id: 4,
     user: user,
     body: "Throwback to when we first started the Y Network project. One year ago today!",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
     likesCount: 1200,
     commentsCount: 45,
     retweetsCount: 300,
@@ -77,7 +82,8 @@ export const tweet: Tweet[] = [
     id: 3,
     user: user,
     body: "Can't believe it's been two years since I moved to this city. Best decision ever.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop",
     likesCount: 450,
     commentsCount: 22,
     retweetsCount: 15,
@@ -89,7 +95,8 @@ export const tweet: Tweet[] = [
     id: 2,
     user: user,
     body: "Remember when 1080p was the cutting edge? 😅 Hello from 2016!",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
     likesCount: 3500,
     commentsCount: 150,
     retweetsCount: 800,
