@@ -5,7 +5,7 @@ import { Logo } from "@/components/ui/logo";
 import { RecommendationArea } from "@/components/ui/recommendation-area";
 import { SearchInput } from "@/components/ui/search-input";
 import { TrendingArea } from "@/components/ui/trending-area";
-import { faHouse, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   children: React.ReactNode;

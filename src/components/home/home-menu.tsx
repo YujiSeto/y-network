@@ -3,7 +3,7 @@ import { Logo } from "../ui/logo";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { SearchInput } from "../ui/search-input";
 import { NavItem } from "../nav/nav-item";
-import { faHouse, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 import { NavLogout } from "../nav/nav-logout";
 
 type Props = {

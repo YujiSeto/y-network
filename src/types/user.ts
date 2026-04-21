@@ -6,5 +6,7 @@ export type User = {
   bio?: string;
   link?: string;
   postCount?: number;
+  followingCount?: number;
+  followersCount?: number;
 }
   
