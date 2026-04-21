@@ -1,11 +1,11 @@
 import { TweetItem } from "../tweet/tweet-item";
 import { tweets } from "@/data/tweet";
 
-export const HomeFeed = () => {
+export const ProfileFeed = () => {
   return (
     <div>
-      {tweets.map((item) => (
-        <TweetItem key={item.id} tweet={item} />
+      {tweets.map((tweet) => (
+        <TweetItem key={tweet.id} tweet={tweet} />
       ))}
     </div>
   );
